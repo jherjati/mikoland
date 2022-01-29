@@ -84,7 +84,7 @@
           >
             <!-- Illustration taken from Lucid Illustrations: https://lucid.pixsellz.io/ -->
             <img
-              class="w-full lg:absolute lg:inset-y-0 lg:left-0 lg:h-full lg:w-auto lg:max-w-none animate-pulse"
+              class="w-full lg:absolute lg:inset-y-0 lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
               src="https://tailwindui.com/img/component-images/cloud-illustration-teal-cyan.svg"
               alt=""
             />
@@ -111,7 +111,7 @@
           No server? No problem.
         </p>
         <p class="mt-5 max-w-prose mx-auto text-xl text-gray-500">
-          Cloud is our bestfriend. We are team of talented people including
+          Cloud is our bestfriend. We are a team of talented people including
           cloud certificate holder. Managing your server has never been easier.
         </p>
       </div>
@@ -179,7 +179,7 @@
                 </h3>
                 <p class="mt-5 text-base text-gray-500">
                   Correlates powerfully to user experience, as well as the
-                  overall effectiveness of most sites. Satisfy your need for
+                  overall effectiveness of most sites. Meets your need for
                   speed.
                 </p>
               </div>
@@ -256,8 +256,7 @@
                 </h3>
                 <p class="mt-5 text-base text-gray-500">
                   Allows you to create and test ideas quickly, cost-effective
-                  approach which puts user experience at the heart of the
-                  process.
+                  approach which puts UX at the heart of design process.
                 </p>
               </div>
             </div>
@@ -339,7 +338,7 @@
                   Easy Management
                 </h3>
                 <p class="mt-5 text-base text-gray-500">
-                  Can make everyone complete the task accurately. They can
+                  Can make everyone complete the task accurately. You can
                   operate with a pleasant mood rather than feeling stupid.
                 </p>
               </div>
@@ -483,9 +482,9 @@
           <div class="flex-1 bg-white p-6 flex flex-col justify-between">
             <div class="flex-1">
               <p class="text-sm font-medium text-cyan-600">
-                <a href="#" class="hover:underline"> Article </a>
+                <a href="/blog/1" class="hover:underline"> Article </a>
               </p>
-              <a href="#" class="block mt-2">
+              <a href="/blog/1" class="block mt-2">
                 <p class="text-xl font-semibold text-gray-900">
                   Boost your conversion rate
                 </p>
@@ -498,7 +497,7 @@
             </div>
             <div class="mt-6 flex items-center">
               <div class="flex-shrink-0">
-                <a href="#">
+                <a href="/team/1">
                   <img
                     class="h-10 w-10 rounded-full"
                     src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
@@ -508,7 +507,9 @@
               </div>
               <div class="ml-3">
                 <p class="text-sm font-medium text-gray-900">
-                  <a href="#" class="hover:underline"> Roel Aufderehar </a>
+                  <a href="/team/1" class="hover:underline">
+                    Roel Aufderehar
+                  </a>
                 </p>
                 <div class="flex space-x-1 text-sm text-gray-500">
                   <time datetime="2020-03-16"> Mar 16, 2020 </time>
@@ -531,9 +532,9 @@
           <div class="flex-1 bg-white p-6 flex flex-col justify-between">
             <div class="flex-1">
               <p class="text-sm font-medium text-cyan-600">
-                <a href="#" class="hover:underline"> Video </a>
+                <a href="/blog/2" class="hover:underline"> Video </a>
               </p>
-              <a href="#" class="block mt-2">
+              <a href="/blog/2" class="block mt-2">
                 <p class="text-xl font-semibold text-gray-900">
                   How to use search engine optimization to drive sales
                 </p>
@@ -547,7 +548,7 @@
             </div>
             <div class="mt-6 flex items-center">
               <div class="flex-shrink-0">
-                <a href="#">
+                <a href="/team/2">
                   <img
                     class="h-10 w-10 rounded-full"
                     src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
@@ -557,7 +558,7 @@
               </div>
               <div class="ml-3">
                 <p class="text-sm font-medium text-gray-900">
-                  <a href="#" class="hover:underline"> Brenna Goyette </a>
+                  <a href="/team/2" class="hover:underline"> Brenna Goyette </a>
                 </p>
                 <div class="flex space-x-1 text-sm text-gray-500">
                   <time datetime="2020-03-10"> Mar 10, 2020 </time>
@@ -580,9 +581,9 @@
           <div class="flex-1 bg-white p-6 flex flex-col justify-between">
             <div class="flex-1">
               <p class="text-sm font-medium text-cyan-600">
-                <a href="#" class="hover:underline"> Case Study </a>
+                <a href="/blog/3" class="hover:underline"> Case Study </a>
               </p>
-              <a href="#" class="block mt-2">
+              <a href="/blog/3" class="block mt-2">
                 <p class="text-xl font-semibold text-gray-900">
                   Improve your customer experience
                 </p>
@@ -595,7 +596,7 @@
             </div>
             <div class="mt-6 flex items-center">
               <div class="flex-shrink-0">
-                <a href="#">
+                <a href="/team/3">
                   <img
                     class="h-10 w-10 rounded-full"
                     src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
@@ -605,7 +606,7 @@
               </div>
               <div class="ml-3">
                 <p class="text-sm font-medium text-gray-900">
-                  <a href="#" class="hover:underline"> Daniela Metz </a>
+                  <a href="/team/3" class="hover:underline"> Daniela Metz </a>
                 </p>
                 <div class="flex space-x-1 text-sm text-gray-500">
                   <time datetime="2020-02-12"> Feb 12, 2020 </time>
