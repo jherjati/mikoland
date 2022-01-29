@@ -7,16 +7,14 @@
         <span class="sr-only">Workflow</span>
         <img
           class="h-12 w-auto"
-          src="https://tailwindui.com/img/logos/workflow-mark.svg?color=indigo&shade=600"
+          src="https://tailwindui.com/img/logos/workflow-mark.svg?color=teal&shade=600"
           alt=""
         />
       </a>
     </div>
     <div class="py-16">
       <div class="text-center">
-        <p
-          class="text-sm font-semibold text-indigo-600 uppercase tracking-wide"
-        >
+        <p class="text-sm font-semibold text-teal-600 uppercase tracking-wide">
           404 error
         </p>
         <h1
@@ -30,7 +28,7 @@
         <div class="mt-6">
           <a
             href="/"
-            class="text-base font-medium text-indigo-600 hover:text-indigo-500"
+            class="text-base font-medium text-teal-600 hover:text-teal-500"
             >Go back home<span aria-hidden="true"> &rarr;</span></a
           >
         </div>

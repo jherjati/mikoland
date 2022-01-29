@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-  <title>Pricing</title>
+  <title>Service</title>
 </svelte:head>
 
 <!-- Pricing with four tiers and toggle -->
@@ -11,7 +11,7 @@
   <div class="max-w-7xl mx-auto pt-24 px-4 sm:px-6 lg:px-8">
     <div class="sm:flex sm:flex-col sm:align-center">
       <h1 class="text-5xl font-extrabold text-gray-900 sm:text-center">
-        Pricing Plans
+        Our Service
       </h1>
       <p class="mt-5 text-xl text-gray-500 sm:text-center">
         Start building for free, then add a site plan to go live. Account plans

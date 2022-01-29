@@ -1,4 +1,6 @@
 <script context="module">
+  import Service from "../components/home/service.svelte";
+
   export const prerender = true;
 </script>
 
@@ -7,6 +9,10 @@
 </svelte:head>
 
 <main>
+  <script
+    defer
+    src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
   <div class="pt-4 bg-gray-900 sm:pt-10 lg:pt-8 lg:pb-14 lg:overflow-hidden">
     <div class="mx-auto max-w-7xl lg:px-8">
       <div class="lg:grid lg:grid-cols-2 lg:gap-8">
@@ -82,12 +88,20 @@
           <div
             class="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 lg:max-w-none lg:px-0"
           >
-            <!-- Illustration taken from Lucid Illustrations: https://lucid.pixsellz.io/ -->
-            <img
+            <lottie-player
+              src="/banner.json"
+              background="transparent"
+              speed="1"
+              loop
+              autoplay
               class="w-full lg:absolute lg:inset-y-0 lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
-              src="https://tailwindui.com/img/component-images/cloud-illustration-teal-cyan.svg"
-              alt=""
             />
+
+            <!-- <img
+              class="w-full lg:absolute lg:inset-y-0 lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
+              src="/astro.svg"
+              alt=""
+            /> -->
           </div>
         </div>
       </div>
@@ -95,35 +109,7 @@
   </div>
 
   <!-- Feature section with screenshot -->
-  <div class="relative bg-gray-50 pt-16 sm:pt-24 lg:pt-32">
-    <div
-      class="mx-auto max-w-md px-4 text-center sm:px-6 sm:max-w-3xl lg:px-8 lg:max-w-7xl"
-    >
-      <div>
-        <h2
-          class="text-base font-semibold tracking-wider text-cyan-600 uppercase"
-        >
-          Serverless
-        </h2>
-        <p
-          class="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl"
-        >
-          No server? No problem.
-        </p>
-        <p class="mt-5 max-w-prose mx-auto text-xl text-gray-500">
-          Cloud is our bestfriend. We are a team of talented people including
-          cloud certificate holder. Managing your server has never been easier.
-        </p>
-      </div>
-      <div class="mt-12 -mb-10 sm:-mb-24 lg:-mb-80">
-        <img
-          class="rounded-lg shadow-xl ring-1 ring-black ring-opacity-5"
-          src="/DirectusSS.png"
-          alt=""
-        />
-      </div>
-    </div>
-  </div>
+  <Service />
 
   <!-- Feature section with grid -->
   <div class="relative bg-white py-16 sm:py-24 lg:py-32">
