@@ -46,7 +46,7 @@
           </div>
         </div>
       </div>
-      <div class="mt-12 -mb-16 sm:-mb-48 lg:m-0 lg:relative">
+      <div class="mt-12 -mb-16 sm:-mb-48 lg:m-0 lg:relative min-h-[25rem]">
         <div
           class="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 lg:max-w-none lg:px-0"
         >

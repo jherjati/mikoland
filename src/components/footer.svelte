@@ -111,13 +111,13 @@
 
               <li>
                 <a href="#" class="text-base text-gray-500 hover:text-gray-900">
-                  Application
+                  Commerce
                 </a>
               </li>
 
               <li>
                 <a href="#" class="text-base text-gray-500 hover:text-gray-900">
-                  Commerce
+                  Application
                 </a>
               </li>
             </ul>
@@ -130,16 +130,13 @@
             </h3>
             <ul class="mt-4 space-y-4">
               <li>
-                <a
-                  href="/team"
-                  class="text-base text-gray-500 hover:text-gray-900"
-                >
-                  Team
+                <a href="/" class="text-base text-gray-500 hover:text-gray-900">
+                  FAQ
                 </a>
               </li>
 
               <li>
-                <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                <a href="/" class="text-base text-gray-500 hover:text-gray-900">
                   Comparison
                 </a>
               </li>
@@ -155,8 +152,11 @@
             </h3>
             <ul class="mt-4 space-y-4">
               <li>
-                <a href="#" class="text-base text-gray-500 hover:text-gray-900">
-                  About
+                <a
+                  href="/team"
+                  class="text-base text-gray-500 hover:text-gray-900"
+                >
+                  Team
                 </a>
               </li>
 
@@ -183,12 +183,6 @@
               Legal
             </h3>
             <ul class="mt-4 space-y-4">
-              <li>
-                <a href="#" class="text-base text-gray-500 hover:text-gray-900">
-                  Claim
-                </a>
-              </li>
-
               <li>
                 <a href="#" class="text-base text-gray-500 hover:text-gray-900">
                   Privacy

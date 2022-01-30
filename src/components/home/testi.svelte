@@ -36,8 +36,8 @@
               />
             </svg>
             <p class="mt-6 text-2xl font-medium text-white">
-              "The team always respond quickly anytime I need them to do
-              anything with my website."
+              The team always respond quickly anytime I need them to do anything
+              with my website.
             </p>
           </div>
           <footer class="mt-6">

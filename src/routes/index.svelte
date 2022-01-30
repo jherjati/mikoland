@@ -1,10 +1,10 @@
 <script context="module">
-  import Value from "../components/home/value.svelte";
+  import Banner from "../components/home/banner.svelte";
   import Service from "../components/home/service.svelte";
+  import Feature from "../components/home/feature.svelte";
   import Testi from "../components/home/testi.svelte";
   import Blog from "../components/home/blog.svelte";
   import Cta from "../components/home/cta.svelte";
-  import Banner from "../components/home/banner.svelte";
 
   export const prerender = true;
 </script>
@@ -19,7 +19,7 @@
 
   <Banner />
   <Service />
-  <Value />
+  <Feature />
   <Testi />
   <Blog />
   <Cta />

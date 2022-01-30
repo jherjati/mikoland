@@ -39,9 +39,11 @@
               </div>
               <div class="text-lg">
                 <p class="text-gray-500">
-                  Ultricies massa malesuada viverra cras lobortis. Tempor orci
-                  hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas
-                  cras. Nisl dictum.
+                  Seasoned Javascript developer with 10 years experience working
+                  with Agile and designing of software solutions. Offering
+                  strong Javascript skills and working experience with React
+                  (Vite or Next) and CSS (CSS in JS or Tailwind), REST, Graphql,
+                  and PWA techniques.
                 </p>
               </div>
 

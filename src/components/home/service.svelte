@@ -1,3 +1,18 @@
+<script>
+  import DiWebplatform from "svelte-icons/di/DiWebplatform.svelte";
+  import MdShoppingBasket from "svelte-icons/md/MdShoppingBasket.svelte";
+  import MdApps from "svelte-icons/md/MdApps.svelte";
+
+  import { inview } from "svelte-inview";
+
+  const options = {
+    rootMargin: "-200px",
+    unobserveOnEnter: false,
+  };
+
+  let isInView = [false, false, false];
+</script>
+
 <div class="relative bg-white pt-32 pb-16 overflow-hidden">
   <!-- Service Section Header -->
   <div class="pb-16 sm:pb-24 lg:pb-32">
@@ -35,24 +50,9 @@
         <div>
           <div>
             <span
-              class="h-12 w-12 rounded-md flex items-center justify-center bg-teal-600"
+              class="h-12 w-12 rounded-md flex items-center justify-center bg-gradient-to-l from-teal-500 to-cyan-600 text-white p-3"
             >
-              <!-- Heroicon name: outline/inbox -->
-              <svg
-                class="h-6 w-6 text-white"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4"
-                />
-              </svg>
+              <DiWebplatform />
             </span>
           </div>
           <div class="mt-6">
@@ -69,7 +69,7 @@
             <div class="mt-6">
               <a
                 href="/contact"
-                class="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-teal-600 hover:bg-teal-700"
+                class="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gradient-to-l from-teal-500 to-cyan-600 hover:bg-teal-700"
               >
                 Get started
               </a>
@@ -101,9 +101,19 @@
           </blockquote>
         </div>
       </div>
-      <div class="mt-12 sm:mt-16 lg:mt-0">
+      <div
+        class="mt-12 sm:mt-16 lg:mt-0"
+        use:inview={options}
+        on:change={({ detail }) => {
+          isInView[0] = detail.inView;
+        }}
+      >
         <div
-          class="pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full"
+          class={`pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full transition-all duration-700 ${
+            isInView[0]
+              ? "translate-x-0 opacity-100"
+              : "translate-x-36 opacity-0"
+          }`}
         >
           <img
             class="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
@@ -126,24 +136,9 @@
         <div>
           <div>
             <span
-              class="h-12 w-12 rounded-md flex items-center justify-center bg-teal-600"
+              class="h-12 w-12 rounded-md flex items-center justify-center bg-gradient-to-r from-teal-500 to-cyan-600 text-white p-3"
             >
-              <!-- Heroicon name: outline/sparkles -->
-              <svg
-                class="h-6 w-6 text-white"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
-                />
-              </svg>
+              <MdShoppingBasket />
             </span>
           </div>
           <div class="mt-6">
@@ -159,7 +154,7 @@
             <div class="mt-6">
               <a
                 href="/contact"
-                class="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-teal-600 hover:bg-teal-700"
+                class="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gradient-to-r from-teal-500 to-cyan-600 hover:bg-teal-700"
               >
                 Get started
               </a>
@@ -167,9 +162,19 @@
           </div>
         </div>
       </div>
-      <div class="mt-12 sm:mt-16 lg:mt-0 lg:col-start-1">
+      <div
+        class="mt-12 sm:mt-16 lg:mt-0 lg:col-start-1"
+        use:inview={options}
+        on:change={({ detail }) => {
+          isInView[1] = detail.inView;
+        }}
+      >
         <div
-          class="pr-4 -ml-48 sm:pr-6 md:-ml-16 lg:px-0 lg:m-0 lg:relative lg:h-full"
+          class={`pr-4 -ml-48 sm:pr-6 md:-ml-16 lg:px-0 lg:m-0 lg:relative lg:h-full transition-all duration-700 ${
+            isInView[1]
+              ? "translate-x-0 opacity-100"
+              : "-translate-x-36 opacity-0"
+          }`}
         >
           <img
             class="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
@@ -192,24 +197,9 @@
         <div>
           <div>
             <span
-              class="h-12 w-12 rounded-md flex items-center justify-center bg-teal-600"
+              class="h-12 w-12 rounded-md flex items-center justify-center bg-gradient-to-l from-teal-500 to-cyan-600 text-white p-3"
             >
-              <!-- Heroicon name: outline/inbox -->
-              <svg
-                class="h-6 w-6 text-white"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4"
-                />
-              </svg>
+              <MdApps />
             </span>
           </div>
           <div class="mt-6">
@@ -217,16 +207,16 @@
               Application to Discover the Unseen
             </h2>
             <p class="mt-4 text-lg text-gray-500">
-              Data analysis provide you with more insights into your customers,
-              allowing you to tailor customer service to their needs, provide
-              more personalization and build stronger relationships with them.
-              Data analysis can help you streamline your processes, save money
+              Data driven application provide you with more insights into your
+              customers, allowing you to tailor customer service to their needs,
+              provide more personalization and build stronger relationships with
+              them. Definitely help you streamline your processes, save money
               and boost your bottom line.
             </p>
             <div class="mt-6">
               <a
                 href="/contact"
-                class="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-teal-600 hover:bg-teal-700"
+                class="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gradient-to-l from-teal-500 to-cyan-600 hover:bg-teal-700"
               >
                 Get started
               </a>
@@ -257,9 +247,19 @@
           </blockquote>
         </div>
       </div>
-      <div class="mt-12 sm:mt-16 lg:mt-0">
+      <div
+        class="mt-12 sm:mt-16 lg:mt-0"
+        use:inview={options}
+        on:change={({ detail }) => {
+          isInView[2] = detail.inView;
+        }}
+      >
         <div
-          class="pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full"
+          class={`pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full transition-all duration-700 ${
+            isInView[2]
+              ? "translate-x-0 opacity-100"
+              : "translate-x-36 opacity-0"
+          }`}
         >
           <img
             class="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"

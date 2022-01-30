@@ -1,3 +1,8 @@
+<script>
+  import { fade } from "svelte/transition";
+  let visible = false;
+</script>
+
 <header class="relative">
   <div class="bg-gray-900 py-6">
     <nav
@@ -19,6 +24,7 @@
               type="button"
               class="bg-gray-900 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:bg-gray-800 focus:outline-none focus:ring-2 focus-ring-inset focus:ring-white"
               aria-expanded="false"
+              on:click={() => (visible = true)}
             >
               <span class="sr-only">Open main menu</span>
               <!-- Heroicon name: outline/menu -->
@@ -41,11 +47,11 @@
           </div>
         </div>
         <div class="hidden space-x-8 md:flex md:ml-10">
-          <a
+          <!-- <a
             href="/service"
             class="text-base font-medium text-white hover:text-gray-300"
             >Service</a
-          >
+          > -->
 
           <a
             href="/blog"
@@ -82,79 +88,84 @@
           From: "opacity-100 scale-100"
           To: "opacity-0 scale-95"
       -->
-  <div
-    class="absolute top-0 inset-x-0 p-2 transition transform origin-top md:hidden"
-  >
+  {#if visible}
     <div
-      class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden"
+      transition:fade
+      class="absolute top-0 inset-x-0 p-2 transition transform origin-top md:hidden"
     >
-      <div class="px-5 pt-4 flex items-center justify-between">
-        <div>
-          <img
-            class="h-8 w-auto"
-            src="https://tailwindui.com/img/logos/workflow-mark-teal-500-cyan-600.svg"
-            alt=""
-          />
-        </div>
-        <div class="-mr-2">
-          <button
-            type="button"
-            class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-cyan-600"
-          >
-            <span class="sr-only">Close menu</span>
-            <!-- Heroicon name: outline/x -->
-            <svg
-              class="h-6 w-6"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              aria-hidden="true"
+      <div
+        class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden"
+      >
+        <div class="px-5 pt-4 flex items-center justify-between">
+          <div>
+            <img
+              class="h-8 w-auto"
+              src="https://tailwindui.com/img/logos/workflow-mark-teal-500-cyan-600.svg"
+              alt=""
+            />
+          </div>
+          <div class="-mr-2">
+            <button
+              type="button"
+              class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-cyan-600"
+              on:click={() => (visible = false)}
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
-          </button>
+              <span class="sr-only">Close menu</span>
+              <!-- Heroicon name: outline/x -->
+              <svg
+                class="h-6 w-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
-      </div>
-      <div class="pt-5 pb-6">
-        <div class="px-2 space-y-1">
-          <a
-            href="/service"
-            class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50"
-            >Service</a
-          >
 
-          <a
-            href="/blog"
-            class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50"
-            >Blog</a
-          >
+        <div class="pt-5 pb-6">
+          <div class="px-2 space-y-1">
+            <!-- <a
+              href="/service"
+              class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50"
+              >Service</a
+            > -->
 
-          <a
-            href="/contact"
-            class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50"
-            >Contact</a
-          >
-        </div>
-        <div class="mt-6 px-5">
-          <button
-            class="block text-center w-full py-3 px-4 rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-medium hover:from-teal-600 hover:to-cyan-700"
-            >Start free trial</button
-          >
-        </div>
-        <div class="mt-6 px-5">
-          <p class="text-center text-base font-medium text-gray-500">
-            Existing customer? <button class="text-gray-900 hover:underline"
-              >Login</button
+            <a
+              href="/blog"
+              class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50"
+              >Blog</a
             >
-          </p>
+
+            <a
+              href="/contact"
+              class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50"
+              >Contact</a
+            >
+          </div>
+          <!-- <div class="mt-6 px-5">
+            <button
+              class="block text-center w-full py-3 px-4 rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-medium hover:from-teal-600 hover:to-cyan-700"
+              >Start free trial</button
+            >
+          </div>
+          <div class="mt-6 px-5">
+            <p class="text-center text-base font-medium text-gray-500">
+              Existing customer? <button class="text-gray-900 hover:underline"
+                >Login</button
+              >
+            </p>
+          </div> -->
         </div>
       </div>
     </div>
-  </div>
+  {/if}
 </header>

@@ -17,9 +17,9 @@
           Get in touch
         </h1>
         <p class="mt-6 text-xl text-warm-gray-500 max-w-3xl">
-          Vel nunc non ut montes, viverra tempor. Proin lectus nibh phasellus
-          morbi non morbi. In elementum urna ut volutpat. Sagittis et vel et
-          fermentum amet consequat.
+          We'd love to hear from you. Whether you are curious about features, a
+          free consultation, or even press -- we're ready to answer any and all
+          questions.
         </p>
       </div>
     </div>
@@ -64,8 +64,9 @@
         />
       </svg>
     </div>
+
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="relative bg-white shadow-xl">
+      <div class="relative bg-white shadow-xl rounded-md overflow-hidden">
         <h2 id="contact-heading" class="sr-only">Contact us</h2>
 
         <div class="grid grid-cols-1 lg:grid-cols-3">
@@ -175,8 +176,7 @@
             </div>
             <h3 class="text-lg font-medium text-white">Contact information</h3>
             <p class="mt-6 text-base text-teal-50 max-w-3xl">
-              Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat
-              massa dictumst amet. Sapien tortor lacus arcu.
+              PT Mikoding Teknologi Global (Mikoding Technologies)
             </p>
             <dl class="mt-8 space-y-6">
               <dt><span class="sr-only">Phone number</span></dt>
@@ -197,7 +197,7 @@
                     d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                   />
                 </svg>
-                <span class="ml-3">+1 (555) 123-4567</span>
+                <span class="ml-3">+62 813 1222 3312</span>
               </dd>
               <dt><span class="sr-only">Email</span></dt>
               <dd class="flex text-base text-teal-50">
@@ -217,7 +217,7 @@
                     d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                   />
                 </svg>
-                <span class="ml-3">support@workcation.com</span>
+                <span class="ml-3">mikoding9@gmail.com</span>
               </dd>
             </dl>
             <ul class="mt-8 flex space-x-12">
@@ -414,43 +414,35 @@
         Our offices
       </h2>
       <p class="mt-6 text-lg text-warm-gray-500 max-w-3xl">
-        Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id
-        malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames.
+        Place where our company's executive management and key managerial and
+        support staff are located. Yet, currently we only support fully remote
+        work.
       </p>
       <div class="mt-10 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
         <div>
-          <h3 class="text-lg font-medium text-warm-gray-900">Los Angeles</h3>
+          <h3 class="text-lg font-medium text-warm-gray-900">Bandung</h3>
           <p class="mt-2 text-base text-warm-gray-500">
-            <span class="block">4556 Brendan Ferry</span>
+            <span class="block">Any working space</span>
 
-            <span class="block">Los Angeles, CA 90210</span>
+            <span class="block">Jawa Barat</span>
           </p>
         </div>
 
         <div>
-          <h3 class="text-lg font-medium text-warm-gray-900">New York</h3>
+          <h3 class="text-lg font-medium text-warm-gray-900">Jakarta</h3>
           <p class="mt-2 text-base text-warm-gray-500">
-            <span class="block">886 Walter Streets</span>
+            <span class="block">Any working space</span>
 
-            <span class="block">New York, NY 12345</span>
+            <span class="block">DKI Jakarta</span>
           </p>
         </div>
 
         <div>
-          <h3 class="text-lg font-medium text-warm-gray-900">Toronto</h3>
+          <h3 class="text-lg font-medium text-warm-gray-900">Yogyakarta</h3>
           <p class="mt-2 text-base text-warm-gray-500">
-            <span class="block">7363 Cynthia Pass</span>
+            <span class="block">Any working space</span>
 
-            <span class="block">Toronto, ON N3Y 4H8</span>
-          </p>
-        </div>
-
-        <div>
-          <h3 class="text-lg font-medium text-warm-gray-900">London</h3>
-          <p class="mt-2 text-base text-warm-gray-500">
-            <span class="block">114 Cobble Lane</span>
-
-            <span class="block">London N1 2EF</span>
+            <span class="block">DI Yogyakarta</span>
           </p>
         </div>
       </div>
