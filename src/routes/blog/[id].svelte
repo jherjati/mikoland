@@ -1,3 +1,7 @@
+<script context="module">
+  export const prerender = true;
+</script>
+
 <div class="bg-white overflow-hidden">
   <div class="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
     <div
@@ -110,7 +114,7 @@
             Dictum magnis risus phasellus vitae quam morbi. Quis lorem lorem
             arcu, metus, egestas netus cursus. In.
           </p>
-          <ul role="list">
+          <ul>
             <li>Quis elit egestas venenatis mattis dignissim.</li>
             <li>
               Cras cras lobortis vitae vivamus ultricies facilisis tempus.

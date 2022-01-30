@@ -220,7 +220,7 @@
                 <span class="ml-3">support@workcation.com</span>
               </dd>
             </dl>
-            <ul role="list" class="mt-8 flex space-x-12">
+            <ul class="mt-8 flex space-x-12">
               <li>
                 <a class="text-teal-200 hover:text-teal-100" href="#">
                   <span class="sr-only">Facebook</span>

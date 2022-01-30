@@ -102,7 +102,7 @@
             >
               Solutions
             </h3>
-            <ul role="list" class="mt-4 space-y-4">
+            <ul class="mt-4 space-y-4">
               <li>
                 <a href="#" class="text-base text-gray-500 hover:text-gray-900">
                   Marketing
@@ -128,13 +128,13 @@
             >
               Support
             </h3>
-            <ul role="list" class="mt-4 space-y-4">
+            <ul class="mt-4 space-y-4">
               <li>
                 <a
-                  href="/pricing"
+                  href="/team"
                   class="text-base text-gray-500 hover:text-gray-900"
                 >
-                  Pricing
+                  Team
                 </a>
               </li>
 
@@ -153,7 +153,7 @@
             >
               Company
             </h3>
-            <ul role="list" class="mt-4 space-y-4">
+            <ul class="mt-4 space-y-4">
               <li>
                 <a href="#" class="text-base text-gray-500 hover:text-gray-900">
                   About
@@ -182,7 +182,7 @@
             >
               Legal
             </h3>
-            <ul role="list" class="mt-4 space-y-4">
+            <ul class="mt-4 space-y-4">
               <li>
                 <a href="#" class="text-base text-gray-500 hover:text-gray-900">
                   Claim

@@ -4,7 +4,7 @@
   >
     <div class="flex-shrink-0 flex justify-center">
       <a href="/" class="inline-flex">
-        <span class="sr-only">Workflow</span>
+        <span class="sr-only">Mikoding</span>
         <img
           class="h-12 w-auto"
           src="https://tailwindui.com/img/logos/workflow-mark.svg?color=teal&shade=600"
