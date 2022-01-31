@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-  <title>Team</title>
+  <title>About</title>
 </svelte:head>
 
 <div class="bg-white">

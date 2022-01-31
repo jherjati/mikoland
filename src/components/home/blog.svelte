@@ -49,7 +49,7 @@
           </div>
           <div class="mt-6 flex items-center">
             <div class="flex-shrink-0">
-              <a href="/team">
+              <a href="/about">
                 <img
                   class="h-10 w-10 rounded-full"
                   src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
@@ -59,7 +59,7 @@
             </div>
             <div class="ml-3">
               <p class="text-sm font-medium text-gray-900">
-                <a href="/team" class="hover:underline"> Roel Aufderehar </a>
+                <a href="/about" class="hover:underline"> Roel Aufderehar </a>
               </p>
               <div class="flex space-x-1 text-sm text-gray-500">
                 <time datetime="2020-03-16"> Mar 16, 2020 </time>
@@ -98,7 +98,7 @@
           </div>
           <div class="mt-6 flex items-center">
             <div class="flex-shrink-0">
-              <a href="/team">
+              <a href="/about">
                 <img
                   class="h-10 w-10 rounded-full"
                   src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
@@ -108,7 +108,7 @@
             </div>
             <div class="ml-3">
               <p class="text-sm font-medium text-gray-900">
-                <a href="/team" class="hover:underline"> Brenna Goyette </a>
+                <a href="/about" class="hover:underline"> Brenna Goyette </a>
               </p>
               <div class="flex space-x-1 text-sm text-gray-500">
                 <time datetime="2020-03-10"> Mar 10, 2020 </time>
@@ -146,7 +146,7 @@
           </div>
           <div class="mt-6 flex items-center">
             <div class="flex-shrink-0">
-              <a href="/team">
+              <a href="/about">
                 <img
                   class="h-10 w-10 rounded-full"
                   src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
@@ -156,7 +156,7 @@
             </div>
             <div class="ml-3">
               <p class="text-sm font-medium text-gray-900">
-                <a href="/team" class="hover:underline"> Daniela Metz </a>
+                <a href="/about" class="hover:underline"> Daniela Metz </a>
               </p>
               <div class="flex space-x-1 text-sm text-gray-500">
                 <time datetime="2020-02-12"> Feb 12, 2020 </time>

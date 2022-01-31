@@ -104,19 +104,28 @@
             </h3>
             <ul class="mt-4 space-y-4">
               <li>
-                <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                <a
+                  href="/blog"
+                  class="text-base text-gray-500 hover:text-gray-900"
+                >
                   Marketing
                 </a>
               </li>
 
               <li>
-                <a href="#" class="text-base text-gray-500 hover:text-gray-900">
-                  Commerce
+                <a
+                  href="/blog"
+                  class="text-base text-gray-500 hover:text-gray-900"
+                >
+                  Ecommerce
                 </a>
               </li>
 
               <li>
-                <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                <a
+                  href="/blog"
+                  class="text-base text-gray-500 hover:text-gray-900"
+                >
                   Application
                 </a>
               </li>
@@ -130,13 +139,19 @@
             </h3>
             <ul class="mt-4 space-y-4">
               <li>
-                <a href="/" class="text-base text-gray-500 hover:text-gray-900">
+                <a
+                  href="#"
+                  class="text-base text-gray-500 hover:text-gray-900"
+                >
                   FAQ
                 </a>
               </li>
 
               <li>
-                <a href="/" class="text-base text-gray-500 hover:text-gray-900">
+                <a
+                  href="/blog"
+                  class="text-base text-gray-500 hover:text-gray-900"
+                >
                   Comparison
                 </a>
               </li>
@@ -153,10 +168,10 @@
             <ul class="mt-4 space-y-4">
               <li>
                 <a
-                  href="/team"
+                  href="/about"
                   class="text-base text-gray-500 hover:text-gray-900"
                 >
-                  Team
+                  About
                 </a>
               </li>
 
@@ -170,7 +185,10 @@
               </li>
 
               <li>
-                <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                <a
+                  href="#"
+                  class="text-base text-gray-500 hover:text-gray-900"
+                >
                   Partners
                 </a>
               </li>
@@ -184,13 +202,19 @@
             </h3>
             <ul class="mt-4 space-y-4">
               <li>
-                <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                <a
+                  href="#"
+                  class="text-base text-gray-500 hover:text-gray-900"
+                >
                   Privacy
                 </a>
               </li>
 
               <li>
-                <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                <a
+                  href="#"
+                  class="text-base text-gray-500 hover:text-gray-900"
+                >
                   Terms
                 </a>
               </li>
