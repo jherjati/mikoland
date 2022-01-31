@@ -47,15 +47,16 @@
           </div>
         </div>
         <div class="hidden space-x-8 md:flex md:ml-10">
-          <!-- <a
-            href="/service"
+          <a
+            href="/#services"
             class="text-base font-medium text-white hover:text-gray-300"
-            >Service</a
-          > -->
+            >Services</a
+          >
 
           <a
-            href="/blog"
-            class="text-base font-medium text-white hover:text-gray-300">Blog</a
+            href="/learn"
+            class="text-base font-medium text-white hover:text-gray-300"
+            >Learn</a
           >
 
           <a
@@ -133,16 +134,16 @@
 
         <div class="pt-5 pb-6">
           <div class="px-2 space-y-1">
-            <!-- <a
-              href="/service"
+            <a
+              href="/#services"
               class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50"
-              >Service</a
-            > -->
+              >Services</a
+            >
 
             <a
-              href="/blog"
+              href="/learn"
               class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50"
-              >Blog</a
+              >Learn</a
             >
 
             <a

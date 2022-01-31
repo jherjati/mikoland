@@ -6,14 +6,14 @@
   import { inview } from "svelte-inview";
 
   const options = {
-    rootMargin: "-200px",
-    unobserveOnEnter: false,
+    rootMargin: "-150px",
+    unobserveOnEnter: true,
   };
 
   let isInView = [false, false, false];
 </script>
 
-<div class="relative bg-white pt-32 pb-16 overflow-hidden">
+<div class="relative bg-white pt-32 pb-16 overflow-hidden" id="services">
   <!-- Service Section Header -->
   <div class="pb-16 sm:pb-24 lg:pb-32">
     <div
@@ -109,7 +109,7 @@
         }}
       >
         <div
-          class={`pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full transition-all duration-700 ${
+          class={`pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full will-change-transform transition-all duration-700 ${
             isInView[0]
               ? "translate-x-0 opacity-100"
               : "translate-x-36 opacity-0"
@@ -170,7 +170,7 @@
         }}
       >
         <div
-          class={`pr-4 -ml-48 sm:pr-6 md:-ml-16 lg:px-0 lg:m-0 lg:relative lg:h-full transition-all duration-700 ${
+          class={`pr-4 -ml-48 sm:pr-6 md:-ml-16 lg:px-0 lg:m-0 lg:relative lg:h-full will-change-transform transition-all duration-700 ${
             isInView[1]
               ? "translate-x-0 opacity-100"
               : "-translate-x-36 opacity-0"
@@ -255,7 +255,7 @@
         }}
       >
         <div
-          class={`pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full transition-all duration-700 ${
+          class={`pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full will-change-transform transition-all duration-700 ${
             isInView[2]
               ? "translate-x-0 opacity-100"
               : "translate-x-36 opacity-0"

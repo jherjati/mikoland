@@ -105,7 +105,7 @@
             <ul class="mt-4 space-y-4">
               <li>
                 <a
-                  href="/blog"
+                  href="/learn"
                   class="text-base text-gray-500 hover:text-gray-900"
                 >
                   Marketing
@@ -114,7 +114,7 @@
 
               <li>
                 <a
-                  href="/blog"
+                  href="/learn"
                   class="text-base text-gray-500 hover:text-gray-900"
                 >
                   Ecommerce
@@ -123,7 +123,7 @@
 
               <li>
                 <a
-                  href="/blog"
+                  href="/learn"
                   class="text-base text-gray-500 hover:text-gray-900"
                 >
                   Application
@@ -139,17 +139,14 @@
             </h3>
             <ul class="mt-4 space-y-4">
               <li>
-                <a
-                  href="#"
-                  class="text-base text-gray-500 hover:text-gray-900"
-                >
+                <a href="#" class="text-base text-gray-500 hover:text-gray-900">
                   FAQ
                 </a>
               </li>
 
               <li>
                 <a
-                  href="/blog"
+                  href="/learn"
                   class="text-base text-gray-500 hover:text-gray-900"
                 >
                   Comparison
@@ -177,18 +174,15 @@
 
               <li>
                 <a
-                  href="/blog"
+                  href="/learn"
                   class="text-base text-gray-500 hover:text-gray-900"
                 >
-                  Blog
+                  Learn
                 </a>
               </li>
 
               <li>
-                <a
-                  href="#"
-                  class="text-base text-gray-500 hover:text-gray-900"
-                >
+                <a href="#" class="text-base text-gray-500 hover:text-gray-900">
                   Partners
                 </a>
               </li>
@@ -202,19 +196,13 @@
             </h3>
             <ul class="mt-4 space-y-4">
               <li>
-                <a
-                  href="#"
-                  class="text-base text-gray-500 hover:text-gray-900"
-                >
+                <a href="#" class="text-base text-gray-500 hover:text-gray-900">
                   Privacy
                 </a>
               </li>
 
               <li>
-                <a
-                  href="#"
-                  class="text-base text-gray-500 hover:text-gray-900"
-                >
+                <a href="#" class="text-base text-gray-500 hover:text-gray-900">
                   Terms
                 </a>
               </li>

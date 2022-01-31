@@ -3,7 +3,7 @@
   import Service from "../components/home/service.svelte";
   import Feature from "../components/home/feature.svelte";
   import Testi from "../components/home/testi.svelte";
-  import Blog from "../components/home/blog.svelte";
+  import Learn from "../components/home/learn.svelte";
   import Cta from "../components/home/cta.svelte";
 
   export const prerender = true;
@@ -21,6 +21,6 @@
   <Service />
   <Feature />
   <Testi />
-  <Blog />
+  <Learn />
   <Cta />
 </main>

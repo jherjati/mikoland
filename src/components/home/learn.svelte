@@ -1,4 +1,4 @@
-<!-- Blog section -->
+<!-- Learn section -->
 <div class="relative bg-gray-50 py-16 sm:py-24 lg:py-32">
   <div class="relative">
     <div
@@ -34,9 +34,9 @@
         <div class="flex-1 bg-white p-6 flex flex-col justify-between">
           <div class="flex-1">
             <p class="text-sm font-medium text-cyan-600">
-              <a href="/blog/1" class="hover:underline"> Article </a>
+              <a href="/learn/1" class="hover:underline"> Article </a>
             </p>
-            <a href="/blog/1" class="block mt-2">
+            <a href="/learn/1" class="block mt-2">
               <p class="text-xl font-semibold text-gray-900">
                 Boost your conversion rate
               </p>
@@ -82,9 +82,9 @@
         <div class="flex-1 bg-white p-6 flex flex-col justify-between">
           <div class="flex-1">
             <p class="text-sm font-medium text-cyan-600">
-              <a href="/blog/2" class="hover:underline"> Video </a>
+              <a href="/learn/2" class="hover:underline"> Video </a>
             </p>
-            <a href="/blog/2" class="block mt-2">
+            <a href="/learn/2" class="block mt-2">
               <p class="text-xl font-semibold text-gray-900">
                 How to use search engine optimization to drive sales
               </p>
@@ -131,9 +131,9 @@
         <div class="flex-1 bg-white p-6 flex flex-col justify-between">
           <div class="flex-1">
             <p class="text-sm font-medium text-cyan-600">
-              <a href="/blog/3" class="hover:underline"> Case Study </a>
+              <a href="/learn/3" class="hover:underline"> Case Study </a>
             </p>
-            <a href="/blog/3" class="block mt-2">
+            <a href="/learn/3" class="block mt-2">
               <p class="text-xl font-semibold text-gray-900">
                 Improve your customer experience
               </p>

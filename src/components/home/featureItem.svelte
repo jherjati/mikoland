@@ -14,7 +14,7 @@
 
   const options = {
     rootMargin: "-100px",
-    unobserveOnEnter: false,
+    unobserveOnEnter: true,
   };
 
   let isInView;
