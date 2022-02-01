@@ -4,18 +4,18 @@
   const features = [
     {
       id: 1,
+      title: "Rapid Iteration",
+      desc: `Allows you to create and test ideas quickly, cost-effective approach which puts UX at the heart of design process.`,
+    },
+    {
+      id: 2,
       title: "Top Performance",
       desc: `Correlates powerfully to user experience, as well as the overall effectiveness of most sites. Meets your need for speed.`,
     },
     {
-      id: 2,
+      id: 3,
       title: "SSL Certificate",
       desc: `Encrypts data sent over your web to ensure that eavesdroppers and hackers are unable to see what you transmit.`,
-    },
-    {
-      id: 3,
-      title: "Rapid Iteration",
-      desc: `Allows you to create and test ideas quickly, cost-effective approach which puts UX at the heart of design process.`,
     },
     {
       id: 4,

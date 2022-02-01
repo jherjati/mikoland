@@ -1,4 +1,4 @@
-<div class="pt-4 bg-gray-900 sm:pt-10 lg:pt-8 lg:pb-14 lg:overflow-hidden">
+<section class="pt-4 bg-gray-900 sm:pt-10 lg:pt-8 lg:pb-14 lg:overflow-hidden">
   <div class="mx-auto max-w-7xl lg:px-8">
     <div class="lg:grid lg:grid-cols-2 lg:gap-8">
       <div
@@ -8,7 +8,7 @@
           <h1
             class="mt-4 text-4xl tracking-tight font-extrabold text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl"
           >
-            <span class="block">A better way to</span>
+            <span class="block">A correct way to</span>
             <span
               class="pb-3 block bg-clip-text text-transparent bg-gradient-to-r from-teal-200 to-cyan-400 sm:pb-5"
               >transform your business</span
@@ -46,12 +46,12 @@
           </div>
         </div>
       </div>
-      <div class="mt-12 -mb-16 sm:-mb-48 lg:m-0 lg:relative min-h-[25rem]">
+      <div class="mt-12 -mb-16 sm:-mb-48 lg:m-0 lg:relative">
         <div
           class="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 lg:max-w-none lg:px-0"
         >
           <lottie-player
-            src="/banner.json"
+            src="https://assets7.lottiefiles.com/packages/lf20_aa0wy04q.json"
             background="transparent"
             speed="1"
             loop
@@ -62,4 +62,4 @@
       </div>
     </div>
   </div>
-</div>
+</section>

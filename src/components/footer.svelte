@@ -11,8 +11,8 @@
           alt="Company name"
         />
         <p class="text-gray-500 text-base">
-          Making the world a better place through constructing elegant
-          hierarchies.
+          Making the world a better place through constructing elegant digital
+          experience.
         </p>
         <div class="flex space-x-6">
           <a href="#" class="text-gray-400 hover:text-gray-500">
@@ -105,16 +105,16 @@
             <ul class="mt-4 space-y-4">
               <li>
                 <a
-                  href="/learn"
+                  href="/blog"
                   class="text-base text-gray-500 hover:text-gray-900"
                 >
-                  Marketing
+                  Website
                 </a>
               </li>
 
               <li>
                 <a
-                  href="/learn"
+                  href="/blog"
                   class="text-base text-gray-500 hover:text-gray-900"
                 >
                   Ecommerce
@@ -123,7 +123,7 @@
 
               <li>
                 <a
-                  href="/learn"
+                  href="/blog"
                   class="text-base text-gray-500 hover:text-gray-900"
                 >
                   Application
@@ -146,7 +146,7 @@
 
               <li>
                 <a
-                  href="/learn"
+                  href="/blog"
                   class="text-base text-gray-500 hover:text-gray-900"
                 >
                   Comparison
@@ -174,10 +174,10 @@
 
               <li>
                 <a
-                  href="/learn"
+                  href="/blog"
                   class="text-base text-gray-500 hover:text-gray-900"
                 >
-                  Learn
+                  Blog
                 </a>
               </li>
 

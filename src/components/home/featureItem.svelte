@@ -39,11 +39,11 @@
             isInView ? "translate-y-0 opacity-100" : "-translate-y-12 opacity-0"
           }`}
         >
-          {#if id === 1}
+          {#if id === 2}
             <MdFastForward />
-          {:else if id === 2}
-            <MdLock />
           {:else if id === 3}
+            <MdLock />
+          {:else if id === 1}
             <MdRefresh />
           {:else if id === 4}
             <MdSecurity />

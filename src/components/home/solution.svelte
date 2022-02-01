@@ -13,8 +13,8 @@
   let isInView = [false, false, false];
 </script>
 
-<div class="relative bg-white pt-32 pb-16 overflow-hidden" id="services">
-  <!-- Service Section Header -->
+<div class="relative bg-white pt-32 pb-16 overflow-hidden" id="solutions">
+  <!-- Solution Section Header -->
   <div class="pb-16 sm:pb-24 lg:pb-32">
     <div
       class="mx-auto max-w-md px-4 text-center sm:px-6 sm:max-w-3xl lg:px-8 lg:max-w-7xl"
@@ -23,7 +23,7 @@
         <h2
           class="text-base font-semibold tracking-wider text-cyan-600 uppercase"
         >
-          Our Services
+          Our Solutions
         </h2>
         <p
           class="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl"
@@ -39,7 +39,7 @@
     </div>
   </div>
 
-  <!-- Service 1 -->
+  <!-- Solution 1 -->
   <div class="relative">
     <div
       class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24"
@@ -125,7 +125,7 @@
     </div>
   </div>
 
-  <!-- Service 2 -->
+  <!-- Solution 2 -->
   <div class="mt-24">
     <div
       class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24"
@@ -186,7 +186,7 @@
     </div>
   </div>
 
-  <!-- Service 3 -->
+  <!-- Solution 3 -->
   <div class="mt-24">
     <div
       class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24"
@@ -204,14 +204,14 @@
           </div>
           <div class="mt-6">
             <h2 class="text-3xl font-extrabold tracking-tight text-gray-900">
-              Application to Discover the Unseen
+              Application to Discover The Unseen
             </h2>
             <p class="mt-4 text-lg text-gray-500">
               Data driven application provide you with more insights into your
-              customers, allowing you to tailor customer service to their needs,
-              provide more personalization and build stronger relationships with
-              them. Definitely help you streamline your processes, save money
-              and boost your bottom line.
+              customers, allowing you to tailor customer solution to their
+              needs, provide more personalization and build stronger
+              relationships with them. Definitely help you streamline your
+              processes, save money and boost your bottom line.
             </p>
             <div class="mt-6">
               <a
