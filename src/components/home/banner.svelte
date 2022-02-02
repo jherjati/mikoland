@@ -33,7 +33,7 @@
                 <div class="mt-3 sm:mt-0 sm:ml-3">
                   <button
                     type="submit"
-                    class="block w-full py-3 px-4 rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-medium hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900"
+                    class="block w-full py-3 px-4 rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-medium transition-all hover:from-teal-400 hover:to-cyan-500 hover:shadow-md hover:scale-110 hover:animate-pulse focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900"
                     >Subscribe</button
                   >
                 </div>

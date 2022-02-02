@@ -39,7 +39,7 @@
           >
             <button
               type="button"
-              class="w-full bg-gradient-to-l from-teal-500 to-cyan-600 px-4 py-2 border border-transparent rounded-md flex items-center justify-center text-base font-medium text-white hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500 sm:w-auto sm:inline-flex"
+              class="w-full bg-gradient-to-l from-teal-500 to-cyan-600 px-4 py-2 border border-transparent rounded-md flex items-center justify-center text-base font-medium text-white transition-all hover:from-teal-400 hover:to-cyan-500 hover:shadow-md hover:scale-110 hover:animate-pulse focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500 sm:w-auto sm:inline-flex"
             >
               Notify me
             </button>

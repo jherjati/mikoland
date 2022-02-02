@@ -69,8 +69,11 @@
             <div class="mt-6">
               <a
                 href="/solution/website"
-                class="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gradient-to-l from-teal-500 to-cyan-600 hover:bg-teal-700"
+                class="relative inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gradient-to-l from-teal-500 to-cyan-600 transition-all hover:from-teal-400 hover:to-cyan-500 hover:shadow-md hover:scale-110 hover:animate-pulse"
               >
+                <span
+                  class="absolute h-3 w-3 top-0 right-0 -mt-1 -mr-1 rounded-full bg-sky-600 opacity-75 animate-ping"
+                />
                 Get started
               </a>
             </div>
@@ -154,8 +157,10 @@
             <div class="mt-6">
               <a
                 href="/contact"
-                class="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gradient-to-r from-teal-500 to-cyan-600 hover:bg-teal-700"
-              >
+                class="relative inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gradient-to-r from-teal-500 to-cyan-600 transition-all hover:from-teal-400 hover:to-cyan-500 hover:shadow-md hover:scale-110 hover:animate-pulse"
+                ><span
+                  class="absolute h-3 w-3 top-0 left-0 -mt-1 -ml-1 rounded-full bg-sky-600 opacity-75 animate-ping"
+                />
                 Get started
               </a>
             </div>
@@ -216,8 +221,10 @@
             <div class="mt-6">
               <a
                 href="/contact"
-                class="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gradient-to-l from-teal-500 to-cyan-600 hover:bg-teal-700"
-              >
+                class="relative inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gradient-to-l from-teal-500 to-cyan-600 transition-all hover:from-teal-400 hover:to-cyan-500 hover:shadow-md hover:scale-110 hover:animate-pulse"
+                ><span
+                  class="absolute h-3 w-3 top-0 right-0 -mt-1 -mr-1 rounded-full bg-sky-600 opacity-75 animate-ping"
+                />
                 Get started
               </a>
             </div>
