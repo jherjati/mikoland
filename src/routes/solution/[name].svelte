@@ -1,710 +1,187 @@
 <script context="module">
   export const prerender = true;
+  import IoLogoGoogle from "svelte-icons/io/IoLogoGoogle.svelte";
 </script>
 
 <svelte:head>
   <title>Solution</title>
 </svelte:head>
 
-<!-- Pricing with four tiers and toggle -->
-<div class="bg-gradient-to-b from-white to-gray-50">
-  <div class="max-w-7xl mx-auto pt-24 px-4 sm:px-6 lg:px-8">
-    <div class="sm:flex sm:flex-col sm:align-center">
-      <h1 class="text-5xl font-extrabold text-gray-900 sm:text-center">
-        Our Solution
-      </h1>
-      <p class="mt-5 text-xl text-gray-500 sm:text-center">
-        Start building for free, then add a site plan to go live. Account plans
-        unlock additional features.
-      </p>
+<!-- Hook -->
+<div class="relative bg-white py-16 sm:py-24">
+  <div
+    class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:gap-24 lg:items-start"
+  >
+    <div class="relative sm:py-16 lg:py-0">
       <div
-        class="relative mt-6 bg-gray-100 rounded-lg p-0.5 flex self-center sm:mt-8"
+        aria-hidden="true"
+        class="hidden sm:block lg:absolute lg:inset-y-0 lg:right-0 lg:w-screen"
       >
-        <button
-          type="button"
-          class="relative bg-white border-gray-200 rounded-md shadow-sm py-2 w-1/2 text-sm font-medium text-gray-900 whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-purple-500 focus:z-10 sm:w-auto sm:px-8"
-          >Monthly billing</button
+        <div
+          class="absolute inset-y-0 right-1/2 w-full bg-gray-50 rounded-r-3xl lg:right-72"
+        />
+        <svg
+          class="absolute top-8 left-1/2 -ml-3 lg:-right-8 lg:left-auto lg:top-12"
+          width="404"
+          height="392"
+          fill="none"
+          viewBox="0 0 404 392"
         >
-        <button
-          type="button"
-          class="ml-0.5 relative border border-transparent rounded-md py-2 w-1/2 text-sm font-medium text-gray-700 whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-purple-500 focus:z-10 sm:w-auto sm:px-8"
-          >Yearly billing</button
+          <defs>
+            <pattern
+              id="02f20b47-fd69-4224-a62a-4c9de5c763f7"
+              x="0"
+              y="0"
+              width="20"
+              height="20"
+              patternUnits="userSpaceOnUse"
+            >
+              <rect
+                x="0"
+                y="0"
+                width="4"
+                height="4"
+                class="text-gray-200"
+                fill="currentColor"
+              />
+            </pattern>
+          </defs>
+          <rect
+            width="404"
+            height="392"
+            fill="url(#02f20b47-fd69-4224-a62a-4c9de5c763f7)"
+          />
+        </svg>
+      </div>
+      <div
+        class="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0 lg:max-w-none lg:py-20"
+      >
+        <!-- Testimonial card-->
+        <div class="relative pt-64 pb-10 rounded-2xl shadow-xl overflow-hidden">
+          <img
+            class="absolute inset-0 h-full w-full object-cover"
+            src="https://images.unsplash.com/photo-1581261946248-3f8d138d74dc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&fp-x=0.5&fp-y=0.6&fp-z=3&width=1440&height=1440&sat=-100"
+            alt=""
+          />
+          <div class="absolute inset-0 bg-teal-500 mix-blend-multiply" />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-teal-600 via-teal-600 opacity-90"
+          />
+          <div class="relative px-8">
+            <div class="h-12 w-12 text-white text-left">
+              <!-- <img
+                class="h-12"
+                src="https://www.google.com/images/searchbox/logo/super_g_sprite_optimized.svg"
+                alt="Workcation"
+              /> -->
+              <IoLogoGoogle />
+            </div>
+            <blockquote class="mt-8">
+              <div class="relative text-lg font-medium text-white md:flex-grow">
+                <svg
+                  class="absolute top-0 left-0 transform -translate-x-3 -translate-y-2 h-8 w-8 text-teal-400"
+                  fill="currentColor"
+                  viewBox="0 0 32 32"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z"
+                  />
+                </svg>
+                <p class="relative">
+                  How fast your website loads is critical ... that includes
+                  search marketing and search engine optimisation ... 53% of
+                  visits are abandoned if a mobile site takes longer than 3
+                  seconds to load. That’s a big problem.
+                </p>
+              </div>
+
+              <footer class="mt-4">
+                <p class="text-base font-semibold text-teal-200">
+                  Dainial An, Google
+                </p>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0">
+      <!-- Content area -->
+      <div class="pt-12 sm:pt-16 lg:pt-20">
+        <h2
+          class="text-3xl text-gray-900 font-extrabold tracking-tight sm:text-4xl"
         >
-      </div>
-    </div>
-    <div
-      class="mt-12 space-y-4 sm:mt-16 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-6 lg:max-w-4xl lg:mx-auto xl:max-w-none xl:mx-0 xl:grid-cols-4"
-    >
-      <div
-        class="border border-gray-200 rounded-lg shadow-sm divide-y divide-gray-200"
-      >
-        <div class="p-6">
-          <h2 class="text-lg leading-6 font-medium text-gray-900">Hobby</h2>
-          <p class="mt-4 text-sm text-gray-500">
-            All the basics for starting a new business
+          Build fast websites, faster.
+        </h2>
+        <div class="mt-6 text-gray-500 space-y-6">
+          <p class="text-lg">
+            A study by digital marketing company Akamai found that 88.5% of web
+            users will leave a website if it loads too slowly. Furthermore, the
+            time it takes to load a webpage affects the purchase decisions of
+            nearly 70% of online shoppers.
           </p>
-          <p class="mt-8">
-            <span class="text-4xl font-extrabold text-gray-900">$12</span>
-            <span class="text-base font-medium text-gray-500">/mo</span>
+          <p class="text-base leading-7">
+            We make sure your website runs smoothly by keeping the software up
+            to date, optimizing videos and images for quicker downloads, and
+            using a website host that can handle your bandwidth demands.
           </p>
-          <a
-            href="#"
-            class="mt-8 block w-full bg-teal-600 border border-transparent rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-teal-700"
-            >Buy Hobby</a
-          >
-        </div>
-        <div class="pt-6 pb-8 px-6">
-          <h3 class="text-xs font-medium text-gray-900 tracking-wide uppercase">
-            What's included
-          </h3>
-          <ul class="mt-6 space-y-4">
-            <li class="flex space-x-3">
-              <!-- Heroicon name: solid/check -->
-              <svg
-                class="flex-shrink-0 h-5 w-5 text-green-500"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-              <span class="text-sm text-gray-500"
-                >Potenti felis, in cras at at ligula nunc.</span
-              >
-            </li>
-
-            <li class="flex space-x-3">
-              <!-- Heroicon name: solid/check -->
-              <svg
-                class="flex-shrink-0 h-5 w-5 text-green-500"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-              <span class="text-sm text-gray-500"
-                >Orci neque eget pellentesque.</span
-              >
-            </li>
-          </ul>
         </div>
       </div>
 
-      <div
-        class="border border-gray-200 rounded-lg shadow-sm divide-y divide-gray-200"
-      >
-        <div class="p-6">
-          <h2 class="text-lg leading-6 font-medium text-gray-900">
-            Freelancer
-          </h2>
-          <p class="mt-4 text-sm text-gray-500">
-            All the basics for starting a new business
-          </p>
-          <p class="mt-8">
-            <span class="text-4xl font-extrabold text-gray-900">$24</span>
-            <span class="text-base font-medium text-gray-500">/mo</span>
-          </p>
-          <a
-            href="#"
-            class="mt-8 block w-full bg-teal-600 border border-transparent rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-teal-700"
-            >Buy Freelancer</a
-          >
-        </div>
-        <div class="pt-6 pb-8 px-6">
-          <h3 class="text-xs font-medium text-gray-900 tracking-wide uppercase">
-            What's included
-          </h3>
-          <ul class="mt-6 space-y-4">
-            <li class="flex space-x-3">
-              <!-- Heroicon name: solid/check -->
-              <svg
-                class="flex-shrink-0 h-5 w-5 text-green-500"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-              <span class="text-sm text-gray-500"
-                >Potenti felis, in cras at at ligula nunc.
-              </span>
-            </li>
+      <!-- Stats section -->
+      <div class="mt-10">
+        <dl class="grid grid-cols-2 gap-x-4 gap-y-8">
+          <div class="border-t-2 border-gray-100 pt-6">
+            <dt class="text-base font-medium text-gray-500">
+              Loading performance
+            </dt>
+            <dd class="text-3xl font-extrabold tracking-tight text-gray-900">
+              2.5 s
+            </dd>
+          </div>
 
-            <li class="flex space-x-3">
-              <!-- Heroicon name: solid/check -->
-              <svg
-                class="flex-shrink-0 h-5 w-5 text-green-500"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-              <span class="text-sm text-gray-500"
-                >Orci neque eget pellentesque.</span
-              >
-            </li>
+          <div class="border-t-2 border-gray-100 pt-6">
+            <dt class="text-base font-medium text-gray-500">Interactivity</dt>
+            <dd class="text-3xl font-extrabold tracking-tight text-gray-900">
+              100 ms
+            </dd>
+          </div>
 
-            <li class="flex space-x-3">
-              <!-- Heroicon name: solid/check -->
-              <svg
-                class="flex-shrink-0 h-5 w-5 text-green-500"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-              <span class="text-sm text-gray-500"
-                >Donec mauris sit in eu tincidunt etiam.</span
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
+          <div class="border-t-2 border-gray-100 pt-6">
+            <dt class="text-base font-medium text-gray-500">
+              Request per second
+            </dt>
+            <dd class="text-3xl font-extrabold tracking-tight text-gray-900">
+              300k
+            </dd>
+          </div>
 
-      <div
-        class="border border-gray-200 rounded-lg shadow-sm divide-y divide-gray-200"
-      >
-        <div class="p-6">
-          <h2 class="text-lg leading-6 font-medium text-gray-900">Startup</h2>
-          <p class="mt-4 text-sm text-gray-500">
-            All the basics for starting a new business
-          </p>
-          <p class="mt-8">
-            <span class="text-4xl font-extrabold text-gray-900">$32</span>
-            <span class="text-base font-medium text-gray-500">/mo</span>
-          </p>
-          <a
-            href="#"
-            class="mt-8 block w-full bg-teal-600 border border-transparent rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-teal-700"
-            >Buy Startup</a
-          >
-        </div>
-        <div class="pt-6 pb-8 px-6">
-          <h3 class="text-xs font-medium text-gray-900 tracking-wide uppercase">
-            What's included
-          </h3>
-          <ul class="mt-6 space-y-4">
-            <li class="flex space-x-3">
-              <!-- Heroicon name: solid/check -->
-              <svg
-                class="flex-shrink-0 h-5 w-5 text-green-500"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-              <span class="text-sm text-gray-500"
-                >Potenti felis, in cras at at ligula nunc.
-              </span>
-            </li>
-
-            <li class="flex space-x-3">
-              <!-- Heroicon name: solid/check -->
-              <svg
-                class="flex-shrink-0 h-5 w-5 text-green-500"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-              <span class="text-sm text-gray-500"
-                >Orci neque eget pellentesque.</span
-              >
-            </li>
-
-            <li class="flex space-x-3">
-              <!-- Heroicon name: solid/check -->
-              <svg
-                class="flex-shrink-0 h-5 w-5 text-green-500"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-              <span class="text-sm text-gray-500"
-                >Donec mauris sit in eu tincidunt etiam.</span
-              >
-            </li>
-
-            <li class="flex space-x-3">
-              <!-- Heroicon name: solid/check -->
-              <svg
-                class="flex-shrink-0 h-5 w-5 text-green-500"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-              <span class="text-sm text-gray-500">Faucibus volutpat magna.</span
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div
-        class="border border-gray-200 rounded-lg shadow-sm divide-y divide-gray-200"
-      >
-        <div class="p-6">
-          <h2 class="text-lg leading-6 font-medium text-gray-900">
-            Enterprise
-          </h2>
-          <p class="mt-4 text-sm text-gray-500">
-            All the basics for starting a new business
-          </p>
-          <p class="mt-8">
-            <span class="text-4xl font-extrabold text-gray-900">$48</span>
-            <span class="text-base font-medium text-gray-500">/mo</span>
-          </p>
-          <a
-            href="#"
-            class="mt-8 block w-full bg-teal-600 border border-transparent rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-teal-700"
-            >Buy Enterprise</a
-          >
-        </div>
-        <div class="pt-6 pb-8 px-6">
-          <h3 class="text-xs font-medium text-gray-900 tracking-wide uppercase">
-            What's included
-          </h3>
-          <ul class="mt-6 space-y-4">
-            <li class="flex space-x-3">
-              <!-- Heroicon name: solid/check -->
-              <svg
-                class="flex-shrink-0 h-5 w-5 text-green-500"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-              <span class="text-sm text-gray-500"
-                >Potenti felis, in cras at at ligula nunc.
-              </span>
-            </li>
-
-            <li class="flex space-x-3">
-              <!-- Heroicon name: solid/check -->
-              <svg
-                class="flex-shrink-0 h-5 w-5 text-green-500"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-              <span class="text-sm text-gray-500"
-                >Orci neque eget pellentesque.</span
-              >
-            </li>
-
-            <li class="flex space-x-3">
-              <!-- Heroicon name: solid/check -->
-              <svg
-                class="flex-shrink-0 h-5 w-5 text-green-500"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-              <span class="text-sm text-gray-500"
-                >Donec mauris sit in eu tincidunt etiam.</span
-              >
-            </li>
-
-            <li class="flex space-x-3">
-              <!-- Heroicon name: solid/check -->
-              <svg
-                class="flex-shrink-0 h-5 w-5 text-green-500"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-              <span class="text-sm text-gray-500">Faucibus volutpat magna.</span
-              >
-            </li>
-
-            <li class="flex space-x-3">
-              <!-- Heroicon name: solid/check -->
-              <svg
-                class="flex-shrink-0 h-5 w-5 text-green-500"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-              <span class="text-sm text-gray-500"
-                >Id sed tellus in varius quisque.</span
-              >
-            </li>
-
-            <li class="flex space-x-3">
-              <!-- Heroicon name: solid/check -->
-              <svg
-                class="flex-shrink-0 h-5 w-5 text-green-500"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-              <span class="text-sm text-gray-500">Risus egestas faucibus.</span>
-            </li>
-
-            <li class="flex space-x-3">
-              <!-- Heroicon name: solid/check -->
-              <svg
-                class="flex-shrink-0 h-5 w-5 text-green-500"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-              <span class="text-sm text-gray-500"
-                >Risus cursus ullamcorper.</span
-              >
-            </li>
-          </ul>
+          <div class="border-t-2 border-gray-100 pt-6">
+            <dt class="text-base font-medium text-gray-500">Availability</dt>
+            <dd class="text-3xl font-extrabold tracking-tight text-gray-900">
+              99%
+            </dd>
+          </div>
+        </dl>
+        <div class="mt-10">
+          <a href="/contact" class="text-base font-medium text-teal-600">
+            Learn more about how we're changing the standard <span
+              aria-hidden="true">&rarr;</span
+            >
+          </a>
         </div>
       </div>
     </div>
-  </div>
-
-  <!-- Feature list -->
-  <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-24 lg:px-8">
-    <div class="max-w-3xl mx-auto text-center">
-      <h2 class="text-3xl font-extrabold text-gray-900">All-in-one platform</h2>
-      <p class="mt-4 text-lg text-gray-500">
-        Ac euismod vel sit maecenas id pellentesque eu sed consectetur.
-        Malesuada adipiscing sagittis vel nulla nec.
-      </p>
-    </div>
-    <dl
-      class="mt-12 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 lg:grid-cols-4 lg:gap-x-8"
-    >
-      <div class="relative">
-        <dt>
-          <!-- Heroicon name: outline/check -->
-          <svg
-            class="absolute h-6 w-6 text-green-500"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            aria-hidden="true"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M5 13l4 4L19 7"
-            />
-          </svg>
-          <p class="ml-9 text-lg leading-6 font-medium text-gray-900">
-            Invite team members
-          </p>
-        </dt>
-        <dd class="mt-2 ml-9 flex text-base text-gray-500 lg:py-0 lg:pb-4">
-          Tempor tellus in aliquet eu et sit nulla tellus. Suspendisse est,
-          molestie blandit quis ac. Lacus.
-        </dd>
-      </div>
-
-      <div class="relative">
-        <dt>
-          <!-- Heroicon name: outline/check -->
-          <svg
-            class="absolute h-6 w-6 text-green-500"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            aria-hidden="true"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M5 13l4 4L19 7"
-            />
-          </svg>
-          <p class="ml-9 text-lg leading-6 font-medium text-gray-900">
-            Notifications
-          </p>
-        </dt>
-        <dd class="mt-2 ml-9 flex text-base text-gray-500 lg:py-0 lg:pb-4">
-          Ornare donec rhoncus vitae nisl velit, neque, mauris dictum duis. Nibh
-          urna non parturient.
-        </dd>
-      </div>
-
-      <div class="relative">
-        <dt>
-          <!-- Heroicon name: outline/check -->
-          <svg
-            class="absolute h-6 w-6 text-green-500"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            aria-hidden="true"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M5 13l4 4L19 7"
-            />
-          </svg>
-          <p class="ml-9 text-lg leading-6 font-medium text-gray-900">
-            List view
-          </p>
-        </dt>
-        <dd class="mt-2 ml-9 flex text-base text-gray-500 lg:py-0 lg:pb-4">
-          Etiam cras augue ornare pretium sit malesuada morbi orci, venenatis.
-          Dictum lacus.
-        </dd>
-      </div>
-
-      <div class="relative">
-        <dt>
-          <!-- Heroicon name: outline/check -->
-          <svg
-            class="absolute h-6 w-6 text-green-500"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            aria-hidden="true"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M5 13l4 4L19 7"
-            />
-          </svg>
-          <p class="ml-9 text-lg leading-6 font-medium text-gray-900">Boards</p>
-        </dt>
-        <dd class="mt-2 ml-9 flex text-base text-gray-500 lg:py-0 lg:pb-4">
-          Interdum quam pulvinar turpis tortor, egestas quis diam amet, natoque.
-          Mauris sagittis.
-        </dd>
-      </div>
-
-      <div class="relative">
-        <dt>
-          <!-- Heroicon name: outline/check -->
-          <svg
-            class="absolute h-6 w-6 text-green-500"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            aria-hidden="true"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M5 13l4 4L19 7"
-            />
-          </svg>
-          <p class="ml-9 text-lg leading-6 font-medium text-gray-900">
-            Keyboard shortcuts
-          </p>
-        </dt>
-        <dd class="mt-2 ml-9 flex text-base text-gray-500 lg:py-0 lg:pb-4">
-          Ullamcorper in ipsum ac feugiat. Senectus at aliquam vulputate mollis
-          nec. In at risus odio.
-        </dd>
-      </div>
-
-      <div class="relative">
-        <dt>
-          <!-- Heroicon name: outline/check -->
-          <svg
-            class="absolute h-6 w-6 text-green-500"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            aria-hidden="true"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M5 13l4 4L19 7"
-            />
-          </svg>
-          <p class="ml-9 text-lg leading-6 font-medium text-gray-900">
-            Reporting
-          </p>
-        </dt>
-        <dd class="mt-2 ml-9 flex text-base text-gray-500 lg:py-0 lg:pb-4">
-          Magna a vel sagittis aliquam eu amet. Et lorem auctor quam nunc odio.
-          Sed bibendum.
-        </dd>
-      </div>
-
-      <div class="relative">
-        <dt>
-          <!-- Heroicon name: outline/check -->
-          <svg
-            class="absolute h-6 w-6 text-green-500"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            aria-hidden="true"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M5 13l4 4L19 7"
-            />
-          </svg>
-          <p class="ml-9 text-lg leading-6 font-medium text-gray-900">
-            Calendars
-          </p>
-        </dt>
-        <dd class="mt-2 ml-9 flex text-base text-gray-500 lg:py-0 lg:pb-4">
-          Sed mi, dapibus turpis orci posuere integer. A porta viverra posuere
-          adipiscing turpis.
-        </dd>
-      </div>
-
-      <div class="relative">
-        <dt>
-          <!-- Heroicon name: outline/check -->
-          <svg
-            class="absolute h-6 w-6 text-green-500"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            aria-hidden="true"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M5 13l4 4L19 7"
-            />
-          </svg>
-          <p class="ml-9 text-lg leading-6 font-medium text-gray-900">
-            Mobile app
-          </p>
-        </dt>
-        <dd class="mt-2 ml-9 flex text-base text-gray-500 lg:py-0 lg:pb-4">
-          Quisque sapien nunc nisl eros. Facilisis sagittis maecenas id
-          dignissim tristique proin sed.
-        </dd>
-      </div>
-    </dl>
   </div>
 </div>
 
-<!-- Logo cloud on brand -->
+<!-- Technologies -->
 <div class="bg-gray-900">
   <div class="max-w-7xl mx-auto py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
     <div class="lg:space-y-10">
-      <h2 class="text-3xl font-extrabold text-white">
-        The world's most innovative companies use Workflow
-      </h2>
+      <h2 class="text-3xl font-extrabold text-white">Technology We Use</h2>
       <div class="mt-8 flow-root lg:mt-0">
         <div class="-mt-4 -ml-8 flex flex-wrap justify-between lg:-ml-4">
           <div
@@ -712,7 +189,7 @@
           >
             <img
               class="h-12"
-              src="https://tailwindui.com/img/logos/tuple-logo-purple-200.svg"
+              src="https://a0.awsstatic.com/libra-css/images/logos/aws_smile-header-desktop-en-white_59x35@2x.png"
               alt="Tuple"
             />
           </div>
@@ -722,7 +199,7 @@
           >
             <img
               class="h-12"
-              src="https://tailwindui.com/img/logos/mirage-logo-purple-200.svg"
+              src="https://www.postgresql.org/media/img/about/press/elephant.png"
               alt="Mirage"
             />
           </div>
@@ -732,7 +209,7 @@
           >
             <img
               class="h-12"
-              src="https://tailwindui.com/img/logos/statickit-logo-purple-200.svg"
+              src="https://nodejs.org/static/images/logo.svg"
               alt="StaticKit"
             />
           </div>
@@ -742,7 +219,7 @@
           >
             <img
               class="h-12"
-              src="https://tailwindui.com/img/logos/transistor-logo-purple-200.svg"
+              src="https://redis.io/images/redis-white.png"
               alt="Transistor"
             />
           </div>
@@ -752,7 +229,7 @@
           >
             <img
               class="h-12"
-              src="https://tailwindui.com/img/logos/workcation-logo-purple-200.svg"
+              src="https://svelte.dev/svelte-logo-horizontal.svg"
               alt="Workcation"
             />
           </div>
@@ -763,63 +240,3 @@
 </div>
 
 <!-- FAQ offset -->
-<div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-20 lg:px-8">
-  <div class="lg:grid lg:grid-cols-3 lg:gap-8">
-    <div class="space-y-4">
-      <h2 class="text-3xl font-extrabold text-gray-900">
-        Frequently asked questions
-      </h2>
-      <p class="text-lg text-gray-500">
-        Can’t find the answer you’re looking for? Reach out to our <a
-          href="#"
-          class="font-medium text-purple-600 hover:text-purple-500"
-          >customer support</a
-        > team.
-      </p>
-    </div>
-    <div class="mt-12 lg:mt-0 lg:col-span-2">
-      <dl class="space-y-12">
-        <div>
-          <dt class="text-lg leading-6 font-medium text-gray-900">
-            How do you make holy water?
-          </dt>
-          <dd class="mt-2 text-base text-gray-500">
-            You boil the hell out of it. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Quas cupiditate laboriosam fugiat.
-          </dd>
-        </div>
-
-        <div>
-          <dt class="text-lg leading-6 font-medium text-gray-900">
-            What&#039;s the best thing about Switzerland?
-          </dt>
-          <dd class="mt-2 text-base text-gray-500">
-            I don&#039;t know, but the flag is a big plus. Lorem ipsum dolor sit
-            amet consectetur adipisicing elit. Quas cupiditate laboriosam
-            fugiat.
-          </dd>
-        </div>
-
-        <div>
-          <dt class="text-lg leading-6 font-medium text-gray-900">
-            What do you call someone with no body and no nose?
-          </dt>
-          <dd class="mt-2 text-base text-gray-500">
-            Nobody knows. Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Quas cupiditate laboriosam fugiat.
-          </dd>
-        </div>
-
-        <div>
-          <dt class="text-lg leading-6 font-medium text-gray-900">
-            Why do you never see elephants hiding in trees?
-          </dt>
-          <dd class="mt-2 text-base text-gray-500">
-            Because they&#039;re so good at it. Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.
-          </dd>
-        </div>
-      </dl>
-    </div>
-  </div>
-</div>

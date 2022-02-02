@@ -30,7 +30,7 @@
   >
     <div class="relative pt-12 pb-64 sm:pt-24 sm:pb-64 xl:col-start-1 xl:pb-24">
       <h2 class="text-sm font-semibold text-indigo-300 tracking-wide uppercase">
-        Here is the reason why
+        Here is why
       </h2>
       <p class="mt-3 text-3xl font-extrabold text-white">
         Digital Transformation Matters

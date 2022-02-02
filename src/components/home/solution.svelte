@@ -68,7 +68,7 @@
             </p>
             <div class="mt-6">
               <a
-                href="/contact"
+                href="/solution/website"
                 class="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gradient-to-l from-teal-500 to-cyan-600 hover:bg-teal-700"
               >
                 Get started

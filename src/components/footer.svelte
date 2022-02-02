@@ -105,7 +105,7 @@
             <ul class="mt-4 space-y-4">
               <li>
                 <a
-                  href="/blog"
+                  href="/solution/website"
                   class="text-base text-gray-500 hover:text-gray-900"
                 >
                   Website
