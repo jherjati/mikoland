@@ -1,6 +1,21 @@
 <script context="module">
   export const prerender = true;
-  import IoLogoGoogle from "svelte-icons/io/IoLogoGoogle.svelte";
+
+  export async function load({ params, fetch }) {
+    const { name } = params;
+    const [{ data }] = await Promise.all([
+      fetch(`https://panel.mikoding.com/items/mikoding_solution/${name}`).then(
+        (r) => r.json()
+      ),
+    ]);
+    return {
+      props: { data },
+    };
+  }
+</script>
+
+<script>
+  export let data;
 </script>
 
 <svelte:head>
@@ -68,13 +83,9 @@
             class="absolute inset-0 bg-gradient-to-t from-teal-600 via-teal-600 opacity-90"
           />
           <div class="relative px-8">
-            <div class="h-12 w-12 text-white text-left">
-              <!-- <img
-                class="h-12"
-                src="https://www.google.com/images/searchbox/logo/super_g_sprite_optimized.svg"
-                alt="Workcation"
-              /> -->
-              <IoLogoGoogle />
+            <div class="h-12">
+              <img class="h-full" src={data.quote_logo} alt="Workcation" />
+              <!-- <IoLogoGoogle /> -->
             </div>
             <blockquote class="mt-8">
               <div class="relative text-lg font-medium text-white md:flex-grow">
@@ -89,16 +100,13 @@
                   />
                 </svg>
                 <p class="relative">
-                  How fast your website loads is critical ... that includes
-                  search marketing and search engine optimisation ... 53% of
-                  visits are abandoned if a mobile site takes longer than 3
-                  seconds to load. That’s a big problem.
+                  {data.quote_sentence}
                 </p>
               </div>
 
               <footer class="mt-4">
                 <p class="text-base font-semibold text-teal-200">
-                  Dainial An, Google
+                  {data.quote_person}
                 </p>
               </footer>
             </blockquote>
@@ -113,19 +121,14 @@
         <h2
           class="text-3xl text-gray-900 font-extrabold tracking-tight sm:text-4xl"
         >
-          Build fast websites, faster.
+          {data.tagline}
         </h2>
         <div class="mt-6 text-gray-500 space-y-6">
           <p class="text-lg">
-            A study by digital marketing company Akamai found that 88.5% of web
-            users will leave a website if it loads too slowly. Furthermore, the
-            time it takes to load a webpage affects the purchase decisions of
-            nearly 70% of online shoppers.
+            {data.fact}
           </p>
           <p class="text-base leading-7">
-            We make sure your website runs smoothly by keeping the software up
-            to date, optimizing videos and images for quicker downloads, and
-            using a website host that can handle your bandwidth demands.
+            {data.offer}
           </p>
         </div>
       </div>
@@ -133,37 +136,16 @@
       <!-- Stats section -->
       <div class="mt-10">
         <dl class="grid grid-cols-2 gap-x-4 gap-y-8">
-          <div class="border-t-2 border-gray-100 pt-6">
-            <dt class="text-base font-medium text-gray-500">
-              Loading performance
-            </dt>
-            <dd class="text-3xl font-extrabold tracking-tight text-gray-900">
-              2.5 s
-            </dd>
-          </div>
-
-          <div class="border-t-2 border-gray-100 pt-6">
-            <dt class="text-base font-medium text-gray-500">Interactivity</dt>
-            <dd class="text-3xl font-extrabold tracking-tight text-gray-900">
-              100 ms
-            </dd>
-          </div>
-
-          <div class="border-t-2 border-gray-100 pt-6">
-            <dt class="text-base font-medium text-gray-500">
-              Request per second
-            </dt>
-            <dd class="text-3xl font-extrabold tracking-tight text-gray-900">
-              300k
-            </dd>
-          </div>
-
-          <div class="border-t-2 border-gray-100 pt-6">
-            <dt class="text-base font-medium text-gray-500">Availability</dt>
-            <dd class="text-3xl font-extrabold tracking-tight text-gray-900">
-              99%
-            </dd>
-          </div>
+          {#each Object.keys(data.metric) as key (key)}
+            <div class="border-t-2 border-gray-100 pt-6">
+              <dt class="text-base font-medium text-gray-500">
+                {key}
+              </dt>
+              <dd class="text-3xl font-extrabold tracking-tight text-gray-900">
+                {data.metric[key]}
+              </dd>
+            </div>
+          {/each}
         </dl>
         <div class="mt-10">
           <a href="/contact" class="text-base font-medium text-teal-600">
@@ -184,55 +166,13 @@
       <h2 class="text-3xl font-extrabold text-white">Technology We Use</h2>
       <div class="mt-8 flow-root lg:mt-0">
         <div class="-mt-4 -ml-8 flex flex-wrap justify-between lg:-ml-4">
-          <div
-            class="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4"
-          >
-            <img
-              class="h-12"
-              src="https://a0.awsstatic.com/libra-css/images/logos/aws_smile-header-desktop-en-white_59x35@2x.png"
-              alt="Tuple"
-            />
-          </div>
-
-          <div
-            class="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4"
-          >
-            <img
-              class="h-12"
-              src="https://www.postgresql.org/media/img/about/press/elephant.png"
-              alt="Mirage"
-            />
-          </div>
-
-          <div
-            class="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4"
-          >
-            <img
-              class="h-12"
-              src="https://nodejs.org/static/images/logo.svg"
-              alt="StaticKit"
-            />
-          </div>
-
-          <div
-            class="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4"
-          >
-            <img
-              class="h-12"
-              src="https://redis.io/images/redis-white.png"
-              alt="Transistor"
-            />
-          </div>
-
-          <div
-            class="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4"
-          >
-            <img
-              class="h-12"
-              src="https://svelte.dev/svelte-logo-horizontal.svg"
-              alt="Workcation"
-            />
-          </div>
+          {#each data.tech as tech (tech)}
+            <div
+              class="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4"
+            >
+              <img class="h-12" src={tech} alt="Tuple" />
+            </div>
+          {/each}
         </div>
       </div>
     </div>
