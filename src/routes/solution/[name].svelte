@@ -71,11 +71,11 @@
       <div
         class="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0 lg:max-w-none lg:py-20"
       >
-        <!-- Testimonial card-->
+        <!-- Quote card-->
         <div class="relative pt-64 pb-10 rounded-2xl shadow-xl overflow-hidden">
           <img
             class="absolute inset-0 h-full w-full object-cover"
-            src="https://images.unsplash.com/photo-1581261946248-3f8d138d74dc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&fp-x=0.5&fp-y=0.6&fp-z=3&width=1440&height=1440&sat=-100"
+            src={data.quote_background}
             alt=""
           />
           <div class="absolute inset-0 bg-teal-500 mix-blend-multiply" />
@@ -136,13 +136,13 @@
       <!-- Stats section -->
       <div class="mt-10">
         <dl class="grid grid-cols-2 gap-x-4 gap-y-8">
-          {#each Object.keys(data.metric) as key (key)}
+          {#each Object.entries(data.metric) as [key, value] (key)}
             <div class="border-t-2 border-gray-100 pt-6">
               <dt class="text-base font-medium text-gray-500">
                 {key}
               </dt>
               <dd class="text-3xl font-extrabold tracking-tight text-gray-900">
-                {data.metric[key]}
+                {value}
               </dd>
             </div>
           {/each}

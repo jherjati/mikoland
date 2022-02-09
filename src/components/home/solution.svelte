@@ -10,14 +10,22 @@
     unobserveOnEnter: true,
   };
 
-  let isInView = [false, false, false];
+  let isInView = [false, false, false, false];
 </script>
 
 <div class="relative bg-white pt-32 pb-16 overflow-hidden" id="solutions">
   <!-- Solution Section Header -->
-  <div class="pb-16 sm:pb-24 lg:pb-32">
+  <div
+    class="pb-16 sm:pb-24 lg:pb-32"
+    use:inview={options}
+    on:change={({ detail }) => {
+      isInView[3] = detail.inView;
+    }}
+  >
     <div
-      class="mx-auto max-w-md px-4 text-center sm:px-6 sm:max-w-3xl lg:px-8 lg:max-w-7xl"
+      class={`mx-auto max-w-md px-4 text-center sm:px-6 sm:max-w-3xl lg:px-8 lg:max-w-7xl will-change-transform transition-all duration-700 ${
+        isInView[3] ? "translate-y-0 opacity-100" : "translate-y-12 opacity-0"
+      }`}
     >
       <div>
         <h2

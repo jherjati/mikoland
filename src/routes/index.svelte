@@ -5,7 +5,6 @@
   import Testi from "../components/home/testi.svelte";
   import Blog from "../components/home/blog.svelte";
   import Cta from "../components/home/cta.svelte";
-  import Reasoning from "../components/home/reasoning.svelte";
 
   export const prerender = true;
 </script>
@@ -19,7 +18,6 @@
     src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
   <Banner />
-  <Reasoning />
   <Solution />
   <Feature />
   <Testi />
