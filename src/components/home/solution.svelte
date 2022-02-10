@@ -164,7 +164,7 @@
             </p>
             <div class="mt-6">
               <a
-                href="/contact"
+                href="/solution/ecommerce"
                 class="relative inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gradient-to-r from-teal-500 to-cyan-600 transition-all hover:from-teal-400 hover:to-cyan-500 hover:shadow-md hover:scale-110 hover:animate-pulse"
                 ><span
                   class="absolute h-3 w-3 top-0 left-0 -mt-1 -ml-1 rounded-full bg-sky-600 opacity-75 animate-ping"
@@ -191,7 +191,7 @@
         >
           <img
             class="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
-            src="https://uploads-ssl.webflow.com/610a7f42a46f6b44bc543ca1/6127d32320af126735ed7550_Frame%2083%20(3)-p-1600.png"
+            src="https://uploads-ssl.webflow.com/61fba9f6deac297b7b22017d/61fec76b67fa73688f7b7d2d_test-oli-p-2000.png"
             alt="Customer profile user interface"
           />
         </div>
@@ -228,7 +228,7 @@
             </p>
             <div class="mt-6">
               <a
-                href="/contact"
+                href="/solution/application"
                 class="relative inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gradient-to-l from-teal-500 to-cyan-600 transition-all hover:from-teal-400 hover:to-cyan-500 hover:shadow-md hover:scale-110 hover:animate-pulse"
                 ><span
                   class="absolute h-3 w-3 top-0 right-0 -mt-1 -mr-1 rounded-full bg-sky-600 opacity-75 animate-ping"

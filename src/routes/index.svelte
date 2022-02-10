@@ -2,7 +2,6 @@
   import Banner from "../components/home/banner.svelte";
   import Solution from "../components/home/solution.svelte";
   import Feature from "../components/home/feature.svelte";
-  import Testi from "../components/home/testi.svelte";
   import Blog from "../components/home/blog.svelte";
   import Cta from "../components/home/cta.svelte";
 
@@ -20,7 +19,6 @@
   <Banner />
   <Solution />
   <Feature />
-  <Testi />
   <Blog />
   <Cta />
 </main>
