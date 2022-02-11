@@ -12,7 +12,7 @@
   <!-- Header -->
   <div class="bg-warm-gray-50">
     <div class="py-24 lg:py-32">
-      <div class="relative z-10 max-w-7xl mx-auto pl-4 pr-8 sm:px-6 lg:px-8">
+      <div class="relative z-0 max-w-7xl mx-auto pl-4 pr-8 sm:px-6 lg:px-8">
         <h1
           class="text-4xl font-extrabold tracking-tight text-warm-gray-900 sm:text-5xl lg:text-6xl"
         >

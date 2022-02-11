@@ -91,7 +91,7 @@
   {#if visible}
     <div
       transition:fade
-      class="absolute top-0 inset-x-0 p-2 transition transform origin-top md:hidden"
+      class="absolute top-0 inset-x-0 p-2 transition transform origin-top md:hidden z-30"
     >
       <div
         class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden"

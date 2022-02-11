@@ -24,7 +24,9 @@
   >
     <div
       class={`mx-auto max-w-md px-4 text-center sm:px-6 sm:max-w-3xl lg:px-8 lg:max-w-7xl will-change-transform transition-all duration-700 ${
-        isInView[3] ? "translate-y-0 opacity-100" : "translate-y-12 opacity-0"
+        isInView[3]
+          ? "translate-y-0 opacity-100 scale-100"
+          : "translate-y-12 opacity-0 scale-75"
       }`}
     >
       <div>
@@ -53,7 +55,11 @@
       class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24"
     >
       <div
-        class="px-4 max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0"
+        class={`px-4 max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0 will-change-transform transition-all duration-700 ${
+          isInView[0]
+            ? "translate-x-0 opacity-100 scale-100"
+            : "translate-x-36 opacity-0 scale-75"
+        }`}
       >
         <div>
           <div>
@@ -120,11 +126,7 @@
         }}
       >
         <div
-          class={`pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full will-change-transform transition-all duration-700 ${
-            isInView[0]
-              ? "translate-x-0 opacity-100"
-              : "translate-x-36 opacity-0"
-          }`}
+          class={`pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full`}
         >
           <img
             class="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
@@ -142,7 +144,11 @@
       class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24"
     >
       <div
-        class="px-4 max-w-xl mx-auto sm:px-6 lg:py-32 lg:max-w-none lg:mx-0 lg:px-0 lg:col-start-2"
+        class={`px-4 max-w-xl mx-auto sm:px-6 lg:py-32 lg:max-w-none lg:mx-0 lg:px-0 lg:col-start-2 will-change-transform transition-all duration-700 ${
+          isInView[1]
+            ? "translate-x-0 opacity-100 scale-100"
+            : "-translate-x-36 opacity-0 scale-75"
+        }`}
       >
         <div>
           <div>
@@ -183,11 +189,7 @@
         }}
       >
         <div
-          class={`pr-4 -ml-48 sm:pr-6 md:-ml-16 lg:px-0 lg:m-0 lg:relative lg:h-full will-change-transform transition-all duration-700 ${
-            isInView[1]
-              ? "translate-x-0 opacity-100"
-              : "-translate-x-36 opacity-0"
-          }`}
+          class={`pr-4 -ml-48 sm:pr-6 md:-ml-16 lg:px-0 lg:m-0 lg:relative lg:h-full`}
         >
           <img
             class="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
@@ -205,7 +207,11 @@
       class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24"
     >
       <div
-        class="px-4 max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0"
+        class={`px-4 max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0 will-change-transform transition-all duration-700 ${
+          isInView[2]
+            ? "translate-x-0 opacity-100 scale-100"
+            : "translate-x-36 opacity-0 scale-75"
+        }`}
       >
         <div>
           <div>
@@ -270,11 +276,7 @@
         }}
       >
         <div
-          class={`pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full will-change-transform transition-all duration-700 ${
-            isInView[2]
-              ? "translate-x-0 opacity-100"
-              : "translate-x-36 opacity-0"
-          }`}
+          class={`pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full`}
         >
           <img
             class="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
