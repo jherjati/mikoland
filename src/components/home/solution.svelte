@@ -53,6 +53,10 @@
   <div class="relative">
     <div
       class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24"
+      use:inview={options}
+      on:change={({ detail }) => {
+        isInView[0] = detail.inView;
+      }}
     >
       <div
         class={`px-4 max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0 will-change-transform transition-all duration-700 ${
@@ -118,13 +122,7 @@
           </blockquote>
         </div>
       </div>
-      <div
-        class="mt-12 sm:mt-16 lg:mt-0"
-        use:inview={options}
-        on:change={({ detail }) => {
-          isInView[0] = detail.inView;
-        }}
-      >
+      <div class="mt-12 sm:mt-16 lg:mt-0">
         <div
           class={`pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full`}
         >
@@ -142,6 +140,10 @@
   <div class="mt-24">
     <div
       class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24"
+      use:inview={options}
+      on:change={({ detail }) => {
+        isInView[1] = detail.inView;
+      }}
     >
       <div
         class={`px-4 max-w-xl mx-auto sm:px-6 lg:py-32 lg:max-w-none lg:mx-0 lg:px-0 lg:col-start-2 will-change-transform transition-all duration-700 ${
@@ -181,13 +183,7 @@
           </div>
         </div>
       </div>
-      <div
-        class="mt-12 sm:mt-16 lg:mt-0 lg:col-start-1"
-        use:inview={options}
-        on:change={({ detail }) => {
-          isInView[1] = detail.inView;
-        }}
-      >
+      <div class="mt-12 sm:mt-16 lg:mt-0 lg:col-start-1">
         <div
           class={`pr-4 -ml-48 sm:pr-6 md:-ml-16 lg:px-0 lg:m-0 lg:relative lg:h-full`}
         >
@@ -205,6 +201,10 @@
   <div class="mt-24">
     <div
       class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24"
+      use:inview={options}
+      on:change={({ detail }) => {
+        isInView[2] = detail.inView;
+      }}
     >
       <div
         class={`px-4 max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0 will-change-transform transition-all duration-700 ${
@@ -268,13 +268,7 @@
           </blockquote>
         </div>
       </div>
-      <div
-        class="mt-12 sm:mt-16 lg:mt-0"
-        use:inview={options}
-        on:change={({ detail }) => {
-          isInView[2] = detail.inView;
-        }}
-      >
+      <div class="mt-12 sm:mt-16 lg:mt-0">
         <div
           class={`pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full`}
         >
