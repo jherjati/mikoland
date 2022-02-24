@@ -28,4 +28,9 @@
   {#if isNotifValue}
     <Notif notifMessage={notifMessageValue} />
   {/if}
+  <script
+    async
+    defer
+    data-website-id="b4f5d8d1-9371-4b25-81b1-2772970a8001"
+    src="https://stats.mikoding.com/umami.js"></script>
 </div>

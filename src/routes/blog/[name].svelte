@@ -1,5 +1,24 @@
 <script context="module">
   export const prerender = true;
+
+  export async function load({ params, fetch }) {
+    const { name } = params;
+    const [{ data }] = await Promise.all([
+      fetch(
+        `https://panel.mikoding.com/items/mikoding_blog/${name}?fields=category,title,article,thumbnail`
+      ).then((r) => r.json()),
+    ]);
+    return {
+      props: { data },
+    };
+  }
+</script>
+
+<script>
+  import SvelteMarkdown from "svelte-markdown";
+
+  export let data;
+  const { category, title, article, thumbnail } = data;
 </script>
 
 <div class="bg-white overflow-hidden">
@@ -14,12 +33,12 @@
         <h2
           class="text-base text-indigo-600 font-semibold tracking-wide uppercase"
         >
-          Case Study
+          {category}
         </h2>
         <h3
           class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl"
         >
-          Meet Whitney
+          {title}
         </h3>
       </div>
     </div>
@@ -63,7 +82,7 @@
             <div class="aspect-w-12 aspect-h-7 lg:aspect-none">
               <img
                 class="rounded-lg shadow-lg object-cover object-center"
-                src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80"
+                src={"https://panel.mikoding.com/assets/" + thumbnail}
                 alt="Whitney leaning against a railing on a downtown street"
                 width="1184"
                 height="1376"
@@ -84,13 +103,15 @@
                   clip-rule="evenodd"
                 />
               </svg>
-              <span class="ml-2">Photograph by Marcus O’Leary</span>
+              <span class="ml-2">Photograph by Unsplash</span>
             </figcaption>
           </figure>
         </div>
       </div>
-      <div class="mt-8 lg:mt-0">
-        <div class="text-base max-w-prose mx-auto lg:max-w-none">
+
+      <article class="mt-8 lg:mt-0 prose">
+        <SvelteMarkdown source={article} />
+        <!-- <div class="text-base max-w-prose mx-auto lg:max-w-none">
           <p class="text-lg text-gray-500">
             Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum
             urna sed consectetur neque tristique pellentesque. Blandit amet, sed
@@ -141,8 +162,8 @@
             urna sed consectetur neque tristique pellentesque. Blandit amet, sed
             aenean erat arcu morbi.
           </p>
-        </div>
-      </div>
+        </div> -->
+      </article>
     </div>
   </div>
 </div>

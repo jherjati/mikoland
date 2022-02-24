@@ -6,7 +6,6 @@
     try {
       const formData = new FormData(event.target);
       const objData = Object.fromEntries(formData.entries());
-      console.log(objData);
       let res = await fetch(
         "https://panel.mikoding.com/items/mikoding_feedback",
         {

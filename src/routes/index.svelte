@@ -10,10 +10,9 @@
   export async function load({ fetch }) {
     const [{ data }] = await Promise.all([
       fetch(
-        `https://panel.mikoding.com/items/mikoding_blog?sort=date_created&fields=thumbnail,category,title,summary,date_created,user_created.first_name,user_created.last_name,user_created.avatar`
+        `https://panel.mikoding.com/items/mikoding_blog?limit=3&sort=date_created&fields=thumbnail,category,title,summary,date_created,user_created.first_name,user_created.last_name,user_created.avatar`
       ).then((r) => r.json()),
     ]);
-    console.log(data);
     return {
       props: { blogs: data },
     };
