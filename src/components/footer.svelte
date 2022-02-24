@@ -213,7 +213,7 @@
     </div>
     <div class="mt-12 border-t border-gray-200 py-8">
       <p class="text-base text-gray-400 xl:text-center">
-        &copy; 2022 Mikoding, Inc. All rights reserved.
+        &copy;{` ${new Date().getFullYear()} Mikoding, Inc. All rights reserved.`}
       </p>
     </div>
   </div>
